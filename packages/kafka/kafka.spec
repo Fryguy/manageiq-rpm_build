@@ -1,7 +1,7 @@
 Name:             kafka
 Summary:          Apache Kafka is an open-source stream-processing software platform
 Version:          3.9.1
-Release:          1%{?dist}
+Release:          2%{?dist}
 License:          Apache (v2)
 Group:            Applications
 URL:              https://kafka.apache.org
@@ -113,6 +113,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Fri May 29 2026 "Brandon Dunne" <brandondunne@hotmail.com> - 3.9.1-2
+- Update service files to ensure that kafka and zookeeper log and data directories exist
+
 * Thu Apr 2 2026 "Brandon Dunne" <brandondunne@hotmail.com> - 3.9.1-1
 - Upgrade to v3.9.1
 - Changes to support EL10 bootc
